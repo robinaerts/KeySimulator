@@ -44,10 +44,10 @@ namespace KeySimulator
             while (started)
             {
                 simulator.Keyboard.KeyPress(VirtualKeyCode.SPACE);
-                for (int i = 0; i < 30; i++)
+                for (int i = 0; i < 50; i++)
                 {
-                    simulator.Keyboard.KeyPress(VirtualKeyCode.LEFT).Sleep(10);
-                    simulator.Keyboard.KeyPress(VirtualKeyCode.RIGHT).Sleep(10);
+                    simulator.Keyboard.KeyPress(VirtualKeyCode.LEFT).Sleep(25);
+                    simulator.Keyboard.KeyPress(VirtualKeyCode.RIGHT).Sleep(25);
                 }
                 Thread.Sleep(delay*1000);
             }
