@@ -45,9 +45,9 @@ namespace KeySimulator
             {
                 simulator.Keyboard.KeyPress(VirtualKeyCode.SPACE).Sleep(1000);
                 simulator.Keyboard.KeyDown(VirtualKeyCode.LEFT).Sleep(2000);
-                simulator.Keyboard.KeyDown(VirtualKeyCode.LEFT);
+                simulator.Keyboard.KeyUp(VirtualKeyCode.LEFT);
                 simulator.Keyboard.KeyDown(VirtualKeyCode.RIGHT).Sleep(2000);
-                simulator.Keyboard.KeyDown(VirtualKeyCode.RIGHT).Sleep(2000);
+                simulator.Keyboard.KeyUp(VirtualKeyCode.RIGHT);
 
         }
         }
