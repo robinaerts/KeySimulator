@@ -43,14 +43,13 @@ namespace KeySimulator
 
             while (started)
             {
-                simulator.Keyboard.KeyPress(VirtualKeyCode.SPACE);
-                for (int i = 0; i < 50; i++)
-                {
-                    simulator.Keyboard.KeyPress(VirtualKeyCode.LEFT).Sleep(25);
-                    simulator.Keyboard.KeyPress(VirtualKeyCode.RIGHT).Sleep(25);
-                }
-                Thread.Sleep(delay*1000);
-            }
+                simulator.Keyboard.KeyPress(VirtualKeyCode.SPACE).Sleep(1000);
+                simulator.Keyboard.KeyDown(VirtualKeyCode.LEFT).Sleep(2000);
+                simulator.Keyboard.KeyDown(VirtualKeyCode.LEFT);
+                simulator.Keyboard.KeyDown(VirtualKeyCode.RIGHT).Sleep(2000);
+                simulator.Keyboard.KeyDown(VirtualKeyCode.RIGHT).Sleep(2000);
+
+        }
         }
     }
 }
